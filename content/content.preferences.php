@@ -102,7 +102,7 @@
 		}
 
 		public function __viewIndexEventPages($context) {
-			$pages = PageManager::fetch(false, array(), array(), 'sortorder ASC');
+			$pages = PageManager::fetch(false, array(), array(), 'path,handle ASC');
 			$options = array();
 
 			foreach ($pages as $page) {
@@ -152,7 +152,7 @@
 		}
 
 		public function __viewIndexDSPages($context) {
-			$pages = PageManager::fetch(false, array(), array(), 'sortorder ASC');
+			$pages = PageManager::fetch(false, array(), array(), 'path,handle ASC');
 			$options = array();
 
 			foreach ($pages as $page) {
